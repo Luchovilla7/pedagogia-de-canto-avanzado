@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedagogía de Canto Intermedio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #0e0e10;
+            --color-accent: #d4af37;
+            --color-accent-hover: #e6c358;
+            --color-text: #f5f2ea;
+            --color-text-muted: #b8b3a8;
+            --color-panel: #17161a;
+            --color-panel-border: #2a2830;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--color-bg);
+            color: var(--color-text);
+            min-height: 100vh;
+        }
+
+        .hero {
+            line-height: 0;
+        }
+
+        .hero img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .pricing-section {
+            padding: 4.5rem 1.5rem 5.5rem;
+            background: #79071f;
+        }
+
+        .pricing-section h2 {
+            text-align: center;
+            font-size: clamp(1.4rem, 3.5vw, 2.1rem);
+            letter-spacing: 0.03em;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.35;
+        }
+
+        .payment-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 1.25rem;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .payment-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.35rem;
+            padding: 1.6rem 1rem;
+            background: #f8e8dd;
+            border: 1px solid #f8e8dd;
+            border-radius: 14px;
+            text-decoration: none;
+            text-align: center;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .payment-btn:hover {
+            background: #f2ddcc;
+            transform: translateY(-3px);
+        }
+
+        .payment-btn .plan {
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            color: #000000;
+        }
+
+        .payment-btn .currency {
+            font-size: 0.85rem;
+            color: #990d2c;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+        }
+
+        .footer-copy {
+            padding: 3rem 1.5rem 3.5rem;
+            text-align: center;
+            background: #79071f;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: var(--color-text);
+        }
+
+        @media (max-width: 640px) {
+            .payment-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, auto);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <img src="img/hero-bg.jpeg" alt="Pedagogía de Canto Intermedio">
+    </section>
+
+    <section class="pricing-section" id="pagos">
+        <h2>ELIGE COMO QUIERES ABONAR LA FORMACIÓN</h2>
+
+        <div class="payment-grid">
+            <a class="payment-btn" href="https://link.fastpaydirect.com/payment-link/6a849f80bd9f26c7377a1b31"
+                target="_blank" rel="noopener noreferrer">
+                <span class="plan">FULL</span>
+                <span class="currency">ARS</span>
+            </a>
+            <a class="payment-btn" href="https://link.fastpaydirect.com/payment-link/6a849f6bbd9f26c7377a1b30"
+                target="_blank" rel="noopener noreferrer">
+                <span class="plan">FULL</span>
+                <span class="currency">USD</span>
+            </a>
+            <a class="payment-btn" href="https://link.fastpaydirect.com/payment-link/6a849fbfbd9f26c7377a1b36"
+                target="_blank" rel="noopener noreferrer">
+                <span class="plan">CUOTAS</span>
+                <span class="currency">ARS</span>
+            </a>
+            <a class="payment-btn" href="https://link.fastpaydirect.com/payment-link/6a849fabbd9f26c7377a1b34"
+                target="_blank" rel="noopener noreferrer">
+                <span class="plan">CUOTAS</span>
+                <span class="currency">USD</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer-copy">Carolina Roisinblit &copy;</footer>
+
+</body>
+
+</html>
